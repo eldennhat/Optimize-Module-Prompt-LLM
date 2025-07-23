@@ -1,17 +1,21 @@
-# Optimize-Module-Prompt-LLM
+# Optimize Prompt Module
 
-A Python module that optimizes input prompts for AI models to generate more accurate and specific single-result outputs.
+**Mục tiêu**: Tối ưu prompt đầu vào cho AI sao cho:
+- Ngắn gọn
+- Giữ được đặc điểm quan trọng
+- Có thể bổ sung chi tiết nếu cần
 
-## Features
-- Clean unnecessary words
-- Extract key visual attributes
-- Rewrite prompt for clarity and image generation
+## Cấu trúc Module
 
-## Usage
-```python
-from prompt_optimizer import optimize_prompt
+Module bao gồm:
+- `OptimizePromptModule`: lớp chính
+- `PromptStrategy`: interface
+- `Shortener`: rút gọn prompt
+- `FeaturePreserver`: giữ đặc điểm
+- `DetailEnhancer`: bổ sung chi tiết
+- `OptimizedPrompt`: chứa kết quả
 
-prompt = "Hãy tạo tôi con chó có tai màu vàng"
-optimized = optimize_prompt(prompt)
-print(optimized)
+## Cách dùng
 
+```bash
+python main.py
