@@ -1,5 +1,0 @@
-# Hiện tại chưa cần gì ngoài Python core
-# Sau này muốn xài NLP thì thêm:
-# spacy
-# transformers
-# langchain
